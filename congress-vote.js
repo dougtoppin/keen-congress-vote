@@ -8131,13 +8131,22 @@ var client = Keen.configure({
     masterKey: process.env.masterKey
 })
 
-client.addEvent("congress-vote", data, function(err, res) {
-    if (err) {
-        console.log("Oh no, an error!");
-    } else {
-        console.log("Hooray, it worked!");
-    }
-});
+/*
+now iterate through each of the person objects and upload them
+ */
+data.objects.forEach(function(value) {
+    console.log("object:" + value.person.lastname);
+
+    client.addEvent("congress-vote", value, function(err, res) {
+        if (err) {
+            console.log("err:" + err);
+        } else {
+            console.log("upload complete");
+        }
+    })
+
+})
+
 
 
 
