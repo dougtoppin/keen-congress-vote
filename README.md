@@ -4,7 +4,8 @@ Experiment using the Keen NodeJS api to import and then use the Keen workbench t
 I've been trying out [https://keen.io/](https://keen.io/) for some analytics and decided to try a little more challenging data. This time I am using congressional voting data that can be found off of [https://www.govtrack.us/congress/votes](https://www.govtrack.us/congress/votes)
 
 To install and use this you can do the following.
-The code already contains a json object that wil be uploaded to your Keen project.
+
+Find a vote data set (JSON) that you want to process (such as https://www.govtrack.us/api/v2/vote_voter?vote=116114).
 
 * install NodeJS
 * create your Keen account and a project
@@ -15,15 +16,16 @@ The code already contains a json object that wil be uploaded to your Keen projec
 	* export masterKey=xxx
 * git clone https://github.com/dougtoppin/keen-congress-vote.git
 * npm install keen.io
-* node keen-congress-vote/congress-vote.js
+* node keen-congress-vote/congress-vote.js 116112
 
-The data should have been uploaded to your Keen project.
+The data should have been uploaded to your Keen project as a new event collection with the name `congress-vote-voteId`.
+
 The data set consists of an array of records, one for each person.
 
 Next use the Keen workbench to take a look at your data.
 
 * go to the Keen workbench for your project (called `congress-vote`)
-* select the `Event Collection` called `congress-vote`
+* select the `Event Collection` called `congress-vote` with the voteId suffix that you specified as the argument
 * select `Analysis Type` called `count_unique`
 * select `Target Property` called `person_role.party`
 * select `Run Query`
