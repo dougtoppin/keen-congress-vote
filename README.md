@@ -3,7 +3,7 @@ Experiment using the Keen NodeJS api to import and then use the Keen workbench t
 
 I've been trying out [https://keen.io/](https://keen.io/) for some analytics and decided to try a little more challenging data. This time I am using congressional voting data that can be found off of [https://www.govtrack.us/congress/votes](https://www.govtrack.us/congress/votes)
 
-Note that Keen.io pricing has a free tier that includes up to 50,000 events per month.
+Note that Keen IO pricing has a free tier that includes up to 50,000 events per month. If you're using Keen to store data for an open data project you can request a higher limit. Just send them an [email](mailto:support@keen.io).
 
 To install and use this you can do the following.
 
