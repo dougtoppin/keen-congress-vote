@@ -3,6 +3,17 @@ Experiment using the Keen NodeJS api to import and then use the Keen workbench t
 
 I've been trying out [https://keen.io/](https://keen.io/) for some analytics and decided to try a little more challenging data. This time I am using congressional voting data that can be found off of [https://www.govtrack.us/congress/votes](https://www.govtrack.us/congress/votes)
 
+The GovTrack data has a number of different fields that can be used including the following
+
+    person:, bioguideid, birthday, cspanid, firstname, gender, gender_label, id, lastname, link, middlename, name, namemod, nickname, osid, pvsid, sortname, twitterid, youtubeid
+
+    person_role:, caucus, congress_numbers, current, description, district, enddate, id, leadership_title, party, person, phone, role_type, role_type_label, senator_class, senator_rank, startdate, state, title, title_long, website
+
+    vote:, category, category_label, chamber, chamber_label, congress, created, id, link, missing_data, number, question, question_details, related_amendment, related_bill, required, result, session, source, source_label, total_minus, total_other, total_plus, vote_type
+
+    voter_type
+    voter_type_label
+
 Note that Keen IO pricing has a free tier that includes up to 50,000 events per month. If you're using Keen to store data for an open data project you can request a higher limit. Just send them an [email](mailto:support@keen.io).
 
 To install and use this you can do the following.
