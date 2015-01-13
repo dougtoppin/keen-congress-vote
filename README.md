@@ -34,7 +34,17 @@ Next use the Keen workbench to take a look at your data.
 
 You should see the result of the query as `2` indicating that 2 values for party were found across the data set.
 
-Numerous variations of queries can be run.
+Another query you could try would be to find each of the unique birthdays from the list of members.
+
+* pick `select_unique` for the analysis type
+* select `person.birthday` for `Target Property`
+* select `Run Query`
+
+The output should look something like [https://s3.amazonaws.com/dtoppin-images/workbench-116120-01.jpg](https://s3.amazonaws.com/dtoppin-images/workbench-116120-01.jpg)
+
+
+Numerous variations of queries can be run with different selections for analysis type and target property.
+Note that you can consume the output from the query into other applications by requesting the data using the `Query Url`.
 
 
 
