@@ -5,11 +5,11 @@ I've been trying out [https://keen.io/](https://keen.io/) for some analytics and
 
 The GovTrack data has a number of different fields that can be used including the following
 
-    person:, bioguideid, birthday, cspanid, firstname, gender, gender_label, id, lastname, link, middlename, name, namemod, nickname, osid, pvsid, sortname, twitterid, youtubeid
+    person: bioguideid, birthday, cspanid, firstname, gender, gender_label, id, lastname, link, middlename, name, namemod, nickname, osid, pvsid, sortname, twitterid, youtubeid
 
-    person_role:, caucus, congress_numbers, current, description, district, enddate, id, leadership_title, party, person, phone, role_type, role_type_label, senator_class, senator_rank, startdate, state, title, title_long, website
+    person_role: caucus, congress_numbers, current, description, district, enddate, id, leadership_title, party, person, phone, role_type, role_type_label, senator_class, senator_rank, startdate, state, title, title_long, website
 
-    vote:, category, category_label, chamber, chamber_label, congress, created, id, link, missing_data, number, question, question_details, related_amendment, related_bill, required, result, session, source, source_label, total_minus, total_other, total_plus, vote_type
+    vote: category, category_label, chamber, chamber_label, congress, created, id, link, missing_data, number, question, question_details, related_amendment, related_bill, required, result, session, source, source_label, total_minus, total_other, total_plus, vote_type
 
     voter_type
     voter_type_label
