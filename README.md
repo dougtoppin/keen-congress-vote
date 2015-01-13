@@ -51,8 +51,7 @@ Another query you could try would be to find each of the unique birthdays from t
 * select `person.birthday` for `Target Property`
 * select `Run Query`
 
-The output should look something like [https://s3.amazonaws.com/dtoppin-images/workbench-116120-01.jpg](https://s3.amazonaws.com/dtoppin-images/workbench-116120-01.jpg)
-
+The output should look something like ![workbench-116120-01](https://cloud.githubusercontent.com/assets/1274131/5715271/5108743a-9aa4-11e4-859d-cf7f0d109ea7.jpg)
 
 Numerous variations of queries can be run with different selections for analysis type and target property.
 Note that you can consume the output from the query into other applications by requesting the data using the `Query Url`.
